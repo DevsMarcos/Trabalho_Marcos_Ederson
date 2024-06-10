@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import Classes.Adicionar;
+import Classes.Alterar;
 import Classes.ListarTodos;
 
 
@@ -10,6 +11,7 @@ public class App {
         int escolha = 0;
         Adicionar listarAdcionar = new Adicionar();
         ListarTodos listarUsuarios = new ListarTodos();
+        Alterar listaAlterar = new Alterar();
         
 
         do {
@@ -39,8 +41,10 @@ public class App {
                     break;
 
                 case 3: 
-
-                    break;
+                String fraseUser2 = listaAlterar.listaAlterar(); 
+                System.out.println(fraseUser2);
+                escolha = 0;
+                break;
 
                 case 4: 
 
