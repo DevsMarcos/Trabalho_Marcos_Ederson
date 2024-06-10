@@ -10,9 +10,9 @@ public class App {
             System.out.println("""
                 Escolha uma das opções abaixo: 
                 1. Adcionar
-                2. Subtrair.
-                3. Multiplicar 
-                4. Dividir
+                2. Listar Todos.
+                3. Alterar 
+                4. Excluir
                 """);
             escolha = leitor.nextInt();
 
@@ -36,7 +36,10 @@ public class App {
                     System.out.println("Opção Inválida tenten novamente");
                     break;
             }
+
         } while (escolha != 5);
+    
+
         
     }
 }
