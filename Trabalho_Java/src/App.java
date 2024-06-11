@@ -3,6 +3,7 @@ import java.util.Scanner;
 import Classes.Adicionar;
 import Classes.Alterar;
 import Classes.ListarTodos;
+import Classes.Excluir; 
 
 
 public class App {
@@ -12,7 +13,7 @@ public class App {
         Adicionar listarAdcionar = new Adicionar();
         ListarTodos listarUsuarios = new ListarTodos();
         Alterar listaAlterar = new Alterar();
-        
+        Excluir listaExcluir = new Excluir();
 
         do {
             System.out.println("""
@@ -47,7 +48,9 @@ public class App {
                 break;
 
                 case 4: 
-
+                String fraseUser3 = listaExcluir.listarExcluir(); 
+                System.out.println(fraseUser3);
+                escolha = 0;
                     break;
             
                 default:
